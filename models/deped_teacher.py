@@ -28,8 +28,15 @@ class DepedTeacher(models.Model):
     
     @api.depends('lastname', 'firstname', 'middlename')
     def _update_fullname(self):
-        for record in self:
-            record.fullname = f"{record.lastname}, {record.firstname} {record.middlename}"
+        fullname = ''
+        # for record in self:
+        if self.lastname:
+            fullname += self.lastname
+        if self.firstname:
+            fullname += ", " + self.firstname
+        if self.middlename:
+            fullname += " " + self.middlename
+        self.fullname = fullname
         
     firstname = fields.Char("First Name", required=True)
     middlename = fields.Char("Middle Name")
