@@ -1,0 +1,1 @@
+from . import deped_school, deped_teacher
