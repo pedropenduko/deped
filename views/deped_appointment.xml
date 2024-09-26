@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record id="deped_appointment_action" model="ir.actions.act_window">
+            <field name="name">School Principals</field>
+            <field name="res_model">deped.appointment</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="deped_appointment_view_tree" model="ir.ui.view">
+            <field name="name">School Principal List</field>
+            <field name="model">deped.appointment</field>
+            <field name="arch" type="xml">
+                <tree string="appointment">
+                    <field name="teacher_id" />
+                    <field name="school_id" />
+                    <field name="start_date" />
+                    <field name="end_date" />
+                </tree>
+            </field>
+        </record>
+        <record id="deped_appointment_view_form" model="ir.ui.view">
+            <field name="name">principal</field>
+            <field name="model">deped.appointment</field>
+            <field name="arch" type="xml">
+                <form string="Test">
+                    <sheet>
+                        <group>
+                            <field name="school_id" />
+                            <field name="teacher_id" />
+                            <field name="start_date" />
+                            <field name="end_date" />
+                        </group>
+                    </sheet>   
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

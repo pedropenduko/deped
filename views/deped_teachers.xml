@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+        <record id="deped_teachers_action" model="ir.actions.act_window">
+            <field name="name">Teachers</field>
+            <field name="res_model">deped.teacher</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="deped_teachers_view_tree" model="ir.ui.view">
+            <field name="name">Teachers List</field>
+            <field name="model">deped.teacher</field>
+            <field name="arch" type="xml">
+                <tree string="teachers">
+                    <field name="fullname" />
+                    <!-- <field name="firstname" />
+                    <field name="middlename" /> -->
+                    <field name="contact_number" />
+                </tree>
+            </field>
+        </record>
+        <record id="deped_teachers_view_form" model="ir.ui.view">
+            <field name="name">Teacher</field>
+            <field name="model">deped.teacher</field>
+            <field name="arch" type="xml">
+                <form string="Test">
+                    <sheet>
+                        <group>
+                            <field name="lastname" />
+                            <field name="firstname" />
+                            <field name="middlename" />
+                            <field name="contact_number" />
+                            <!-- <field name="start_date" />
+                            <field name="end_date" /> -->
+                        </group>
+                        <notebook>
+                            <page string="School Assignment">
+                                <field name="appointment_ids" nolabel="1" />
+                            </page>
+                        </notebook>
+                    </sheet>   
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
