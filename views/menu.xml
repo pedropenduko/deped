@@ -1,9 +1,7 @@
 <odoo>
-    <menuitem id="deped_menu_root" name="DepEd System">
-        <menuitem id="deped_menu" name="Schools">
-            <menuitem id="deped_schools_menu_action" action="deped_schools_action" />
-            <menuitem id="deped_teachers_menu_action" action="deped_teachers_action" />
-            <!-- <menuitem id="deped_principals_menu_action" action="deped_principals_action" /> -->
-        </menuitem>
+    <menuitem id="deped_menu_root" name="DepEd School Management System">
+        <menuitem id="deped_menu_schools" name="Schools" action="deped_schools_action" />
+        <menuitem id="deped_menu_teachers" name="Teachers" action="deped_teachers_action" />
+        <!-- <menuitem id="deped_menu_appointment" name="Principals" action="deped_appointment_action" /> -->
     </menuitem>
 </odoo>

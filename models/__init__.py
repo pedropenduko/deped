@@ -1,1 +1,1 @@
-from . import deped_school, deped_teacher
+from . import deped_school, deped_teacher, deped_appointment

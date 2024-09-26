@@ -10,7 +10,7 @@
             <field name="model">deped.school</field>
             <field name="arch" type="xml">
                 <tree string="Schools">
-                    <field name="school_id" />
+                    <field name="deped_school_id" />
                     <field name="school_name" />
                     <field name="school_address" />
                 </tree>
@@ -20,16 +20,16 @@
             <field name="name">Schools</field>
             <field name="model">deped.school</field>
             <field name="arch" type="xml">
-                <form string="Test">
+                <form string="School">
                     <sheet>
                         <group>
-                            <field name="school_id" />
+                            <field name="deped_school_id" />
                             <field name="school_name" />
                             <field name="school_address" />
                         </group>
                         <notebook>
-                            <page string="Principal Assigned">
-                                <field name="principal_assigned" nolabel="1" />
+                            <page string="School Principal">
+                                <field name="appointment_ids" nolabel="1" />
                             </page>
                         </notebook>
                     </sheet>   
