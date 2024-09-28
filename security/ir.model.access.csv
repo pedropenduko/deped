@@ -2,3 +2,5 @@ id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_deped_school,access_deped_school,model_deped_school,base.group_user,1,1,1,1
 access_deped_teacher,access_deped_teacher,model_deped_teacher,base.group_user,1,1,1,1
 access_deped_appointment,access_deped_appointment,model_deped_appointment,base.group_user,1,1,1,1
+access_deped_funds,access_deped_funds,model_deped_funds,base.group_user,1,1,1,1
+access_deped_school_funding,access_deped_school_funding,model_deped_school_funding,base.group_user,1,1,1,1

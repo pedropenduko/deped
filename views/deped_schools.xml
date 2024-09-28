@@ -31,6 +31,9 @@
                             <page string="School Principal">
                                 <field name="appointment_ids" nolabel="1" />
                             </page>
+                            <page string="DepEd Budget Fundings">
+                                <field name="fund_ids" nolabel="1" />
+                            </page>
                         </notebook>
                     </sheet>   
                 </form>

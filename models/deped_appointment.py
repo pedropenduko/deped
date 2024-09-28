@@ -9,5 +9,4 @@ class DepedAppointment(models.Model):
     school_id = fields.Many2one("deped.school", string="School", required=True)
     start_date = fields.Date("Start Date")
     end_date = fields.Date("End Date")
-    date_created = fields.Datetime(default=fields.Datetime.now)
-    date_updated = fields.Datetime(default=fields.Datetime.now)
+

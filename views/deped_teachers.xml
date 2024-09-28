@@ -21,7 +21,7 @@
             <field name="name">Teacher</field>
             <field name="model">deped.teacher</field>
             <field name="arch" type="xml">
-                <form string="Test">
+                <form string="Funds">
                     <sheet>
                         <group>
                             <field name="lastname" />

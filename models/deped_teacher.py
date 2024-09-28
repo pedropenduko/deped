@@ -34,5 +34,3 @@ class DepedTeacher(models.Model):
     contact_number = fields.Char("Contact Number")
     
     appointment_ids = fields.One2many("deped.appointment", "teacher_id", string="Appointments")
-    date_created = fields.Datetime(default=fields.Datetime.now)
-    date_updated = fields.Datetime(default=fields.Datetime.now)

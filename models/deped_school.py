@@ -24,7 +24,6 @@ class DepedSchool(models.Model):
     school_name = fields.Char("School Name", required=True)
     school_address = fields.Char("School Address")
     appointment_ids = fields.One2many("deped.appointment", "school_id", string="School Principal")
-    
-    date_created = fields.Datetime(default=fields.Datetime.now)
-    date_updated = fields.Datetime(default=fields.Datetime.now)
+    fund_ids = fields.One2many("deped.school.funding", "school_id", string="DepEd Funding")
+
 

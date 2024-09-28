@@ -2,6 +2,10 @@
     <menuitem id="deped_menu_root" name="DepEd School Management System">
         <menuitem id="deped_menu_schools" name="Schools" action="deped_schools_action" />
         <menuitem id="deped_menu_teachers" name="Teachers" action="deped_teachers_action" />
+        <menuitem id="deped_menu_deped_funds" name="DepEd Funds">
+            <menuitem id="deped_menu_funds" name="Funds" action="deped_funds_action" />
+            <menuitem id="deped_menu_funded_schools" name="Funded Schools" action="deped_funded_schools_action" />
+        </menuitem>
         <!-- <menuitem id="deped_menu_appointment" name="Principals" action="deped_appointment_action" /> -->
     </menuitem>
 </odoo>

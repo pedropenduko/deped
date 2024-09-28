@@ -8,6 +8,10 @@
         'application': True,
         'data': [
                 'security/ir.model.access.csv',
+                'views/deped_funds.xml',
+                'views/deped_school_funding.xml',
+                'views/deped_funded_schools.xml',
+                
                 'views/deped_appointment.xml',
                 'views/deped_schools.xml',
                 'views/deped_teachers.xml',

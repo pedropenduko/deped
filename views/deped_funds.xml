@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <record id="deped_funds_action" model="ir.actions.act_window">
+            <field name="name">DepEd Funds</field>
+            <field name="res_model">deped.funds</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="deped_funds_view_tree" model="ir.ui.view">
+            <field name="name">DepEd Funds</field>
+            <field name="model">deped.funds</field>
+            <field name="arch" type="xml">
+                <tree string="funds">
+                    <field name="fund_name" />
+                    <field name="fund_amount" />
+                    <field name="fund_date" />
+                </tree>
+            </field>
+        </record>
+        <record id="deped_funds_view_form" model="ir.ui.view">
+            <field name="name">Funds</field>
+            <field name="model">deped.funds</field>
+            <field name="arch" type="xml">
+                <form string="Funds">
+                    <sheet>
+                        <group>
+                            <field name="fund_name" />
+                            <field name="fund_amount" />
+                            <field name="fund_description" />
+                            <field name="fund_date" />
+                            <field name="fund_code" />
+                        </group>
+                        <notebook>
+                            <page string="Recipient Schools">
+                                <field name="fund_ids" nolabel="1" />
+                            </page>
+                        </notebook>
+                    </sheet>   
+                </form>
+            </field>
+        </record>
+    </data>
+    
+</odoo>

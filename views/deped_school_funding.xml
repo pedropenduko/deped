@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record id="deped_school_funding_action" model="ir.actions.act_window">
+            <field name="name">School Principals</field>
+            <field name="res_model">deped.school.funding</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="deped_school_funding_view_tree" model="ir.ui.view">
+            <field name="name">Schools List</field>
+            <field name="model">deped.school.funding</field>
+            <field name="arch" type="xml">
+                <tree string="school_funding">
+                    <field name="fund_id" />
+                    <field name="school_id" />
+                    <field name="date_downloaded" />
+                    <field name="is_downloaded" />
+                </tree>
+            </field>
+        </record>
+        <record id="deped_school_funding_view_form" model="ir.ui.view">
+            <field name="name">School Funds</field>
+            <field name="model">deped.school.funding</field>
+            <field name="arch" type="xml">
+                <form string="School Funds">
+                    <sheet>
+                        <group>
+                            <field name="school_id" />
+                            <field name="fund_id" />
+                            <field name="date_downloaded" />
+                            <field name="is_downloaded" />
+                        </group>
+                    </sheet>   
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
